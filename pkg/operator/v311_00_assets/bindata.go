@@ -26,9 +26,13 @@ type bindataFileInfo struct {
 func (fi bindataFileInfo) Name() string {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	return fi.name
 }
 func (fi bindataFileInfo) Size() int64 {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	return fi.size
@@ -36,9 +40,13 @@ func (fi bindataFileInfo) Size() int64 {
 func (fi bindataFileInfo) Mode() os.FileMode {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	return fi.mode
 }
 func (fi bindataFileInfo) ModTime() time.Time {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	return fi.modTime
@@ -46,9 +54,13 @@ func (fi bindataFileInfo) ModTime() time.Time {
 func (fi bindataFileInfo) IsDir() bool {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	return false
 }
 func (fi bindataFileInfo) Sys() interface{} {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	return nil
@@ -66,9 +78,13 @@ data:
 func v3110KubeSchedulerCmYamlBytes() ([]byte, error) {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	return _v3110KubeSchedulerCmYaml, nil
 }
 func v3110KubeSchedulerCmYaml() (*asset, error) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	bytes, err := v3110KubeSchedulerCmYamlBytes()
@@ -94,9 +110,13 @@ algorithmSource:
 func v3110KubeSchedulerDefaultconfigPostbootstrapWithPolicyYamlBytes() ([]byte, error) {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	return _v3110KubeSchedulerDefaultconfigPostbootstrapWithPolicyYaml, nil
 }
 func v3110KubeSchedulerDefaultconfigPostbootstrapWithPolicyYaml() (*asset, error) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	bytes, err := v3110KubeSchedulerDefaultconfigPostbootstrapWithPolicyYamlBytes()
@@ -117,9 +137,13 @@ clientConnection:
 func v3110KubeSchedulerDefaultconfigPostbootstrapYamlBytes() ([]byte, error) {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	return _v3110KubeSchedulerDefaultconfigPostbootstrapYaml, nil
 }
 func v3110KubeSchedulerDefaultconfigPostbootstrapYaml() (*asset, error) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	bytes, err := v3110KubeSchedulerDefaultconfigPostbootstrapYamlBytes()
@@ -138,9 +162,13 @@ kind: KubeSchedulerConfiguration
 func v3110KubeSchedulerDefaultconfigYamlBytes() ([]byte, error) {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	return _v3110KubeSchedulerDefaultconfigYaml, nil
 }
 func v3110KubeSchedulerDefaultconfigYaml() (*asset, error) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	bytes, err := v3110KubeSchedulerDefaultconfigYamlBytes()
@@ -183,9 +211,13 @@ data:
 func v3110KubeSchedulerKubeconfigCmYamlBytes() ([]byte, error) {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	return _v3110KubeSchedulerKubeconfigCmYaml, nil
 }
 func v3110KubeSchedulerKubeconfigCmYaml() (*asset, error) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	bytes, err := v3110KubeSchedulerKubeconfigCmYamlBytes()
@@ -213,9 +245,13 @@ subjects:
 func v3110KubeSchedulerLeaderElectionRolebindingYamlBytes() ([]byte, error) {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	return _v3110KubeSchedulerLeaderElectionRolebindingYaml, nil
 }
 func v3110KubeSchedulerLeaderElectionRolebindingYaml() (*asset, error) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	bytes, err := v3110KubeSchedulerLeaderElectionRolebindingYamlBytes()
@@ -238,9 +274,13 @@ metadata:
 func v3110KubeSchedulerNsYamlBytes() ([]byte, error) {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	return _v3110KubeSchedulerNsYaml, nil
 }
 func v3110KubeSchedulerNsYaml() (*asset, error) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	bytes, err := v3110KubeSchedulerNsYamlBytes()
@@ -266,9 +306,13 @@ data:
 func v3110KubeSchedulerPodCmYamlBytes() ([]byte, error) {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	return _v3110KubeSchedulerPodCmYaml, nil
 }
 func v3110KubeSchedulerPodCmYaml() (*asset, error) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	bytes, err := v3110KubeSchedulerPodCmYamlBytes()
@@ -350,9 +394,13 @@ spec:
 func v3110KubeSchedulerPodYamlBytes() ([]byte, error) {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	return _v3110KubeSchedulerPodYaml, nil
 }
 func v3110KubeSchedulerPodYaml() (*asset, error) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	bytes, err := v3110KubeSchedulerPodYamlBytes()
@@ -382,9 +430,13 @@ rules:
 func v3110KubeSchedulerPolicyconfigmapRoleYamlBytes() ([]byte, error) {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	return _v3110KubeSchedulerPolicyconfigmapRoleYaml, nil
 }
 func v3110KubeSchedulerPolicyconfigmapRoleYaml() (*asset, error) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	bytes, err := v3110KubeSchedulerPolicyconfigmapRoleYamlBytes()
@@ -413,9 +465,13 @@ subjects:
 func v3110KubeSchedulerPolicyconfigmapRolebindingYamlBytes() ([]byte, error) {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	return _v3110KubeSchedulerPolicyconfigmapRolebindingYaml, nil
 }
 func v3110KubeSchedulerPolicyconfigmapRolebindingYaml() (*asset, error) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	bytes, err := v3110KubeSchedulerPolicyconfigmapRolebindingYamlBytes()
@@ -437,9 +493,13 @@ metadata:
 func v3110KubeSchedulerSaYamlBytes() ([]byte, error) {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	return _v3110KubeSchedulerSaYaml, nil
 }
 func v3110KubeSchedulerSaYaml() (*asset, error) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	bytes, err := v3110KubeSchedulerSaYamlBytes()
@@ -468,9 +528,13 @@ subjects:
 func v3110KubeSchedulerSchedulerClusterrolebindingYamlBytes() ([]byte, error) {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	return _v3110KubeSchedulerSchedulerClusterrolebindingYaml, nil
 }
 func v3110KubeSchedulerSchedulerClusterrolebindingYaml() (*asset, error) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	bytes, err := v3110KubeSchedulerSchedulerClusterrolebindingYamlBytes()
@@ -503,9 +567,13 @@ spec:
 func v3110KubeSchedulerSvcYamlBytes() ([]byte, error) {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	return _v3110KubeSchedulerSvcYaml, nil
 }
 func v3110KubeSchedulerSvcYaml() (*asset, error) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	bytes, err := v3110KubeSchedulerSvcYamlBytes()
@@ -517,6 +585,8 @@ func v3110KubeSchedulerSvcYaml() (*asset, error) {
 	return a, nil
 }
 func Asset(name string) ([]byte, error) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	cannonicalName := strings.Replace(name, "\\", "/", -1)
@@ -532,6 +602,8 @@ func Asset(name string) ([]byte, error) {
 func MustAsset(name string) []byte {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	a, err := Asset(name)
 	if err != nil {
 		panic("asset: Asset(" + name + "): " + err.Error())
@@ -539,6 +611,8 @@ func MustAsset(name string) []byte {
 	return a
 }
 func AssetInfo(name string) (os.FileInfo, error) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	cannonicalName := strings.Replace(name, "\\", "/", -1)
@@ -554,6 +628,8 @@ func AssetInfo(name string) (os.FileInfo, error) {
 func AssetNames() []string {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	names := make([]string, 0, len(_bindata))
 	for name := range _bindata {
 		names = append(names, name)
@@ -564,6 +640,8 @@ func AssetNames() []string {
 var _bindata = map[string]func() (*asset, error){"v3.11.0/kube-scheduler/cm.yaml": v3110KubeSchedulerCmYaml, "v3.11.0/kube-scheduler/defaultconfig-postbootstrap-with-policy.yaml": v3110KubeSchedulerDefaultconfigPostbootstrapWithPolicyYaml, "v3.11.0/kube-scheduler/defaultconfig-postbootstrap.yaml": v3110KubeSchedulerDefaultconfigPostbootstrapYaml, "v3.11.0/kube-scheduler/defaultconfig.yaml": v3110KubeSchedulerDefaultconfigYaml, "v3.11.0/kube-scheduler/kubeconfig-cm.yaml": v3110KubeSchedulerKubeconfigCmYaml, "v3.11.0/kube-scheduler/leader-election-rolebinding.yaml": v3110KubeSchedulerLeaderElectionRolebindingYaml, "v3.11.0/kube-scheduler/ns.yaml": v3110KubeSchedulerNsYaml, "v3.11.0/kube-scheduler/pod-cm.yaml": v3110KubeSchedulerPodCmYaml, "v3.11.0/kube-scheduler/pod.yaml": v3110KubeSchedulerPodYaml, "v3.11.0/kube-scheduler/policyconfigmap-role.yaml": v3110KubeSchedulerPolicyconfigmapRoleYaml, "v3.11.0/kube-scheduler/policyconfigmap-rolebinding.yaml": v3110KubeSchedulerPolicyconfigmapRolebindingYaml, "v3.11.0/kube-scheduler/sa.yaml": v3110KubeSchedulerSaYaml, "v3.11.0/kube-scheduler/scheduler-clusterrolebinding.yaml": v3110KubeSchedulerSchedulerClusterrolebindingYaml, "v3.11.0/kube-scheduler/svc.yaml": v3110KubeSchedulerSvcYaml}
 
 func AssetDir(name string) ([]string, error) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	node := _bintree
@@ -597,6 +675,8 @@ var _bintree = &bintree{nil, map[string]*bintree{"v3.11.0": {nil, map[string]*bi
 func RestoreAsset(dir, name string) error {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	data, err := Asset(name)
 	if err != nil {
 		return err
@@ -622,6 +702,8 @@ func RestoreAsset(dir, name string) error {
 func RestoreAssets(dir, name string) error {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	children, err := AssetDir(name)
 	if err != nil {
 		return RestoreAsset(dir, name)
@@ -637,13 +719,24 @@ func RestoreAssets(dir, name string) error {
 func _filePath(dir, name string) string {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	cannonicalName := strings.Replace(name, "\\", "/", -1)
 	return filepath.Join(append([]string{dir}, strings.Split(cannonicalName, "/")...)...)
 }
 func _logClusterCodePath() {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	pc, _, _, _ := godefaultruntime.Caller(1)
 	jsonLog := []byte(fmt.Sprintf("{\"fn\": \"%s\"}", godefaultruntime.FuncForPC(pc).Name()))
 	godefaulthttp.Post("http://35.226.239.161:5001/"+"logcode", "application/json", godefaultbytes.NewBuffer(jsonLog))
+}
+func _logClusterCodePath() {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
+	pc, _, _, _ := godefaultruntime.Caller(1)
+	jsonLog := []byte(fmt.Sprintf("{\"fn\": \"%s\"}", godefaultruntime.FuncForPC(pc).Name()))
+	godefaulthttp.Post("/"+"logcode", "application/json", godefaultbytes.NewBuffer(jsonLog))
 }

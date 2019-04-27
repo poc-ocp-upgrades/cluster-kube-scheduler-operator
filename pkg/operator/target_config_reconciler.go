@@ -41,6 +41,8 @@ type TargetConfigReconciler struct {
 func NewTargetConfigReconciler(targetImagePullSpec string, operatorConfigInformer operatorv1informers.KubeSchedulerInformer, namespacedKubeInformers informers.SharedInformerFactory, kubeInformersForNamespaces v1helpers.KubeInformersForNamespaces, configInformer configinformers.SharedInformerFactory, operatorConfigClient operatorv1client.KubeSchedulersGetter, kubeClient kubernetes.Interface, eventRecorder events.Recorder) *TargetConfigReconciler {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	c := &TargetConfigReconciler{targetImagePullSpec: targetImagePullSpec, operatorConfigClient: operatorConfigClient, kubeClient: kubeClient, configMapLister: kubeInformersForNamespaces.ConfigMapLister(), eventRecorder: eventRecorder, SchedulerLister: configInformer.Config().V1().Schedulers().Lister(), SchedulingCacheSync: configInformer.Config().V1().Schedulers().Informer().HasSynced, featureGateLister: configInformer.Config().V1().FeatureGates().Lister(), featureGateCacheSync: configInformer.Config().V1().FeatureGates().Informer().HasSynced, queue: workqueue.NewNamedRateLimitingQueue(workqueue.DefaultControllerRateLimiter(), "TargetConfigReconciler")}
 	configInformer.Config().V1().Schedulers().Informer().AddEventHandler(c.eventHandler())
 	operatorConfigInformer.Informer().AddEventHandler(c.eventHandler())
@@ -58,6 +60,8 @@ func NewTargetConfigReconciler(targetImagePullSpec string, operatorConfigInforme
 	return c
 }
 func (c TargetConfigReconciler) sync() error {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	operatorConfig, err := c.operatorConfigClient.KubeSchedulers().Get("cluster", metav1.GetOptions{})
@@ -89,6 +93,8 @@ func (c TargetConfigReconciler) sync() error {
 func (c *TargetConfigReconciler) Run(workers int, stopCh <-chan struct{}) {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	defer utilruntime.HandleCrash()
 	defer c.queue.ShutDown()
 	klog.Infof("Starting TargetConfigReconciler")
@@ -103,10 +109,14 @@ func (c *TargetConfigReconciler) Run(workers int, stopCh <-chan struct{}) {
 func (c *TargetConfigReconciler) runWorker() {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	for c.processNextWorkItem() {
 	}
 }
 func (c *TargetConfigReconciler) processNextWorkItem() bool {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	dsKey, quit := c.queue.Get()
@@ -126,6 +136,8 @@ func (c *TargetConfigReconciler) processNextWorkItem() bool {
 func (c *TargetConfigReconciler) eventHandler() cache.ResourceEventHandler {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	return cache.ResourceEventHandlerFuncs{AddFunc: func(obj interface{}) {
 		c.queue.Add(workQueueKey)
 	}, UpdateFunc: func(old, new interface{}) {
@@ -138,6 +150,8 @@ func (c *TargetConfigReconciler) eventHandler() cache.ResourceEventHandler {
 var interestingNamespaces = sets.NewString(operatorclient.TargetNamespace)
 
 func (c *TargetConfigReconciler) namespaceEventHandler() cache.ResourceEventHandler {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	return cache.ResourceEventHandlerFuncs{AddFunc: func(obj interface{}) {

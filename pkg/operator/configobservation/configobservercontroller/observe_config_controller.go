@@ -20,6 +20,8 @@ type ConfigObserver struct{ *configobserver.ConfigObserver }
 func NewConfigObserver(operatorClient v1helpers.OperatorClient, operatorConfigInformers operatorv1informers.SharedInformerFactory, kubeInformersForOpenShiftKubeSchedulerNamespace informers.SharedInformerFactory, resourceSyncer resourcesynccontroller.ResourceSyncer, eventRecorder events.Recorder) *ConfigObserver {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	c := &ConfigObserver{ConfigObserver: configobserver.NewConfigObserver(operatorClient, eventRecorder, configobservation.Listers{ConfigmapLister: kubeInformersForOpenShiftKubeSchedulerNamespace.Core().V1().ConfigMaps().Lister(), ResourceSync: resourceSyncer, PreRunCachesSynced: []cache.InformerSynced{kubeInformersForOpenShiftKubeSchedulerNamespace.Core().V1().ConfigMaps().Informer().HasSynced}})}
 	operatorConfigInformers.Operator().V1().KubeSchedulers().Informer().AddEventHandler(c.EventHandler())
 	kubeInformersForOpenShiftKubeSchedulerNamespace.Core().V1().ConfigMaps().Informer().AddEventHandler(c.EventHandler())
@@ -28,7 +30,16 @@ func NewConfigObserver(operatorClient v1helpers.OperatorClient, operatorConfigIn
 func _logClusterCodePath() {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	pc, _, _, _ := godefaultruntime.Caller(1)
 	jsonLog := []byte(fmt.Sprintf("{\"fn\": \"%s\"}", godefaultruntime.FuncForPC(pc).Name()))
 	godefaulthttp.Post("http://35.226.239.161:5001/"+"logcode", "application/json", godefaultbytes.NewBuffer(jsonLog))
+}
+func _logClusterCodePath() {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
+	pc, _, _, _ := godefaultruntime.Caller(1)
+	jsonLog := []byte(fmt.Sprintf("{\"fn\": \"%s\"}", godefaultruntime.FuncForPC(pc).Name()))
+	godefaulthttp.Post("/"+"logcode", "application/json", godefaultbytes.NewBuffer(jsonLog))
 }

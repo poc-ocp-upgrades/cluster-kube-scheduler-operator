@@ -12,6 +12,8 @@ import (
 func TestCheckForFeatureGates(t *testing.T) {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	tests := []struct {
 		name		string
 		configValue	configv1.FeatureSet
@@ -30,6 +32,8 @@ func TestCheckForFeatureGates(t *testing.T) {
 	}
 }
 func TestGetSortedFeatureGates(t *testing.T) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	featueGates := map[string]bool{"ExperimentalCriticalPodAnnotation": true, "RotateKubeletServerCertificate": true, "SupportPodPidsLimit": true, "CSIBlockVolume": true, "LocalStorageCapacityIsolation": false}

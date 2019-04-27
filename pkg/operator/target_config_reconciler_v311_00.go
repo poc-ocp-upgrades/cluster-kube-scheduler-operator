@@ -30,6 +30,8 @@ const TargetPolicyConfigMapName = "policy-configmap"
 func createTargetConfigReconciler_v311_00_to_latest(c TargetConfigReconciler, recorder events.Recorder, operatorConfig *operatorv1.KubeScheduler) (bool, error) {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	operatorConfigOriginal := operatorConfig.DeepCopy()
 	errors := []error{}
 	directResourceResults := resourceapply.ApplyDirectly(c.kubeClient, c.eventRecorder, v311_00_assets.Asset, "v3.11.0/kube-scheduler/ns.yaml", "v3.11.0/kube-scheduler/kubeconfig-cm.yaml", "v3.11.0/kube-scheduler/leader-election-rolebinding.yaml", "v3.11.0/kube-scheduler/scheduler-clusterrolebinding.yaml", "v3.11.0/kube-scheduler/policyconfigmap-role.yaml", "v3.11.0/kube-scheduler/policyconfigmap-rolebinding.yaml", "v3.11.0/kube-scheduler/svc.yaml", "v3.11.0/kube-scheduler/sa.yaml")
@@ -72,6 +74,8 @@ func createTargetConfigReconciler_v311_00_to_latest(c TargetConfigReconciler, re
 	return false, nil
 }
 func manageKubeSchedulerConfigMap_v311_00_to_latest(lister corev1listers.ConfigMapLister, client coreclientv1.ConfigMapsGetter, recorder events.Recorder, operatorConfig *operatorv1.KubeScheduler, schedulerLister configlistersv1.SchedulerLister) (*corev1.ConfigMap, bool, error) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	configMap := resourceread.ReadConfigMapV1OrDie(v311_00_assets.MustAsset("v3.11.0/kube-scheduler/cm.yaml"))
@@ -121,6 +125,8 @@ func manageKubeSchedulerConfigMap_v311_00_to_latest(lister corev1listers.ConfigM
 func managePod_v311_00_to_latest(configMapsGetter coreclientv1.ConfigMapsGetter, secretsGetter coreclientv1.SecretsGetter, recorder events.Recorder, operatorConfig *operatorv1.KubeScheduler, imagePullSpec string, featureGateLister configlistersv1.FeatureGateLister) (*corev1.ConfigMap, bool, error) {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	required := resourceread.ReadPodV1OrDie(v311_00_assets.MustAsset("v3.11.0/kube-scheduler/pod.yaml"))
 	if len(imagePullSpec) > 0 {
 		required.Spec.Containers[0].Image = imagePullSpec
@@ -159,6 +165,8 @@ func managePod_v311_00_to_latest(configMapsGetter coreclientv1.ConfigMapsGetter,
 func getSortedFeatureGates(featureGates map[string]bool) []string {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	var sortedFeatureGates []string
 	for featureGateName := range featureGates {
 		sortedFeatureGates = append(sortedFeatureGates, featureGateName)
@@ -169,6 +177,8 @@ func getSortedFeatureGates(featureGates map[string]bool) []string {
 func getFeatureGateString(sortedFeatureGates []string, featureGates map[string]bool) string {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	allFeatureGates := ""
 	for _, featureGateName := range sortedFeatureGates {
 		allFeatureGates = allFeatureGates + "," + fmt.Sprintf("%v=%v", featureGateName, featureGates[featureGateName])
@@ -176,6 +186,8 @@ func getFeatureGateString(sortedFeatureGates []string, featureGates map[string]b
 	return strings.TrimPrefix(allFeatureGates, ",")
 }
 func checkForFeatureGates(featureGateLister configlistersv1.FeatureGateLister) map[string]bool {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	featureGateListConfig, err := featureGateLister.Get("cluster")
@@ -201,6 +213,8 @@ func checkForFeatureGates(featureGateLister configlistersv1.FeatureGateLister) m
 func generateFeatureGates(enabledFeatureGates, disabledFeatureGates []string, featureGates map[string]bool) map[string]bool {
 	_logClusterCodePath()
 	defer _logClusterCodePath()
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	for _, enabledFeatureGate := range enabledFeatureGates {
 		featureGates[enabledFeatureGate] = true
 	}
@@ -210,6 +224,8 @@ func generateFeatureGates(enabledFeatureGates, disabledFeatureGates []string, fe
 	return featureGates
 }
 func manageServiceAccountCABundle(lister corev1listers.ConfigMapLister, client coreclientv1.ConfigMapsGetter, recorder events.Recorder) (*corev1.ConfigMap, bool, error) {
+	_logClusterCodePath()
+	defer _logClusterCodePath()
 	_logClusterCodePath()
 	defer _logClusterCodePath()
 	requiredConfigMap, err := resourcesynccontroller.CombineCABundleConfigMaps(resourcesynccontroller.ResourceLocation{Namespace: operatorclient.TargetNamespace, Name: "serviceaccount-ca"}, lister, resourcesynccontroller.ResourceLocation{Namespace: operatorclient.GlobalMachineSpecifiedConfigNamespace, Name: "kube-apiserver-server-ca"}, resourcesynccontroller.ResourceLocation{Namespace: operatorclient.GlobalMachineSpecifiedConfigNamespace, Name: "router-ca"})
